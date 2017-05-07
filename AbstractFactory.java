@@ -72,7 +72,11 @@ public class AbstractFactory {
 	}
 	
 	public void testAbstractFactory() {
-		
+		Creator c = new Creator1(); // istanzio un Creator
+		Icon ic = c.getIcon();
+		Text t = c.getText();
+		ic.draw();
+		t.tell(); 
 	}
 	
 }
